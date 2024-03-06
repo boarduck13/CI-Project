@@ -17,13 +17,13 @@ public class StatisticsServiceTest {
     }
 
     @Test
-    void findMaxInTheMiddle() {
+    void findMaxInEndArray() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {12, 5, 8, 4, 5, 30, 8, 6, 11, 11, 12};
-        long expected = 30;
+        long[] incomeInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 120};
+        long expected = 120;
 
-        long actual = service.findMax(incomesInBillions);
+        long actual = service.findMax(incomeInBillions);
 
         Assertions.assertEquals(expected, actual);
     }
